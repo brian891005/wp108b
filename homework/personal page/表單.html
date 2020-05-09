@@ -1,16 +1,55 @@
 <html>
  <head>
+   <script>
+     var bodyBgs = [];
+      bodyBgs[0] = "background/1.jpg";
+      bodyBgs[1] = "background/2.jpg";
+      bodyBgs[2] = "background/3.jpg";
+      bodyBgs[3] = "background/4.jpg";
+      bodyBgs[4] = "background/5.jpg";
+      bodyBgs[5] = "background/6.jpg";
+      bodyBgs[6] = "background/7.jpg";
+      bodyBgs[7] = "background/8.jpg";
+      bodyBgs[8] = "background/9.jpg";
+      
+      
+    
+      var randomBgIndex = Math.round( Math.random() * 8 );
+      document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') }</style>');
+
+      function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      }
+   </script>
    <style>
+     @import url('C:/Users/user/Desktop/css/wp108b/homework/personal page/css試作/picture move.css');
      fieldset{
        color:rgb(0, 0, 0);
      }
    </style>
-  <tittle>Forms</title>
+  
  </head>
- <body style="background-image: url('picture/IMG_6485.JPG');
-              background-repeat: no-repeat;
+ <body style="background-repeat: no-repeat;
               background-attachment: fixed;  
-              background-size: cover;">
+              background-size: cover;
+              font-weight: bolder;">
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="file:///C:/Users/user/Desktop/css/wp108b/homework/personal%20page/%E5%80%8B%E4%BA%BA%E9%A6%96%E9%A0%81.html">首頁</a>
+    <a href="#">專題</a>
+    <a href="https://udn.com/news/breaknews/1">新聞</a>
+    <a href="file:///C:/Users/user/Desktop/css/wp108b/homework/personal%20page/%E7%B0%A1%E4%BB%8B.html">關於我</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  </div>
   <form action="http://www.example.com/review.php" method="get">
    <fieldset style="background-color: rgba(255,255,255,0.3);">
     <legend>
@@ -80,7 +119,7 @@
 	<br />
   <input type="submit" value="提交" />
   <input type="reset" value="重設"/>
-  <input type ="button" onclick="history.back()" value="回首頁" style="float: right;"></input>
+  <input type ="button" onclick="history.back()" value="回上頁" style="float: right;"></input>
       </fieldset>
      </body>
    </html>
