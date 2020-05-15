@@ -17,17 +17,18 @@
 }
 
 #move li:hover{
-  transform: rotate(180deg);
-  -moz-transform:rotate(180deg);
- -webkit-transform:rotate(180deg);
- -o-transform:rotate(180deg);
- -ms-transform:rotate(180deg);
+  color: aquamarine;
+  transform: rotate(360deg);
+  -moz-transform:rotate(360deg);
+ -webkit-transform:rotate(360deg);
+ -o-transform:rotate(360deg);
+ -ms-transform:rotate(360deg);
 
-	-webkit-transition: -webkit-transform 1s linear;
-	-moz-transition: -moz-transform 1s linear;
-	-o-transition: -o-transform 1s linear;
-	-ms-transition: -ms-transform 1s linear;
-	transition: transform 1s linear;
+	-webkit-transition: -webkit-transform 1.5s linear;
+	-moz-transition: -moz-transform 1.5s linear;
+	-o-transition: -o-transform 1.5s linear;
+	-ms-transition: -ms-transform 1.5s linear;
+	transition: transform 1.5s linear;
 }
 .wrap {
   text-align: center;
@@ -37,7 +38,7 @@
   display: inline-block;
 }
 #big a:hover{
-     color: red;
+     color: rgb(156, 248, 8);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
@@ -48,7 +49,7 @@
 }
 #big {
   display: block;
-  color: rgb(256, 256, 256);
+  color: rgb(4, 255, 66);
   text-align: center;
   font-size: 100%;
   padding: 15px;
@@ -109,6 +110,7 @@ body {
   color: white;
   padding: 10px 15px;
   border: none;
+  
 }
 
 .openbtn:hover {
@@ -116,6 +118,6 @@ body {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-right .5s;
   padding: 16px;
 }
